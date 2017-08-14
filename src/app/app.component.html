@@ -1,3 +1,32 @@
 <h1>
   {{title}}
 </h1>
+<div class="card">
+  <ng-container>
+    <div class="contact-details">
+      <table border="1">
+        <thead>
+          <tr>
+            <td>Nome</td>
+            <td>Endereço</td>
+            <td>Copanhia</td>
+            <td>Info</td>
+            <td>E-mail</td>
+            <td>Twitter</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let contact of data.contacts">
+            <td>{{contact.name}}</td>    
+            <td>{{contact.location}}</td>
+            <td>{{contact.company}}</td>
+            <td>{{contact.info}}</td>
+            <td>{{contact.email}}</td>
+            <td>{{contact.twitter}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </ng-container>
+</div>
+
